@@ -1,0 +1,6 @@
+{
+  "parent": "shutter:block/template_shutter_1",
+  "textures": {
+    "texture": "shutter:block/iron_hammer_inv",
+"particle": "minecraft:block/iron_hammer_inv_planks"}
+}

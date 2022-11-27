@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "goilerweapony:gold_hammer"
+    },
+    "addition": {
+        "item": "goilerweapony:lifter"
+    },
+    "result": {
+        "item": "goilerweapony:golden_lifter_hammer"
+    }
+}

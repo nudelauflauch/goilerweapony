@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        " R ",
+        " / "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:iron_ingot"
+        },
+        "R": {
+            "item": "minecraft:rabbit_hide"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "goilerweapony:iron_hammer",
+        "count": 1
+    }
+}

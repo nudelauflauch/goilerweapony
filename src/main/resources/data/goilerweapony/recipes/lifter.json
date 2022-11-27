@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#E#",
+        "C C"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:popped_chorus_fruit"
+        },
+        "E": {
+            "item": "minecraft:ender_pearl"
+        },
+        "C": {
+            "item": "minecraft:chorus_fruit"
+        }
+    },
+    "result": {
+        "item": "goilerweapony:lifter",
+        "count": 1
+    }
+}

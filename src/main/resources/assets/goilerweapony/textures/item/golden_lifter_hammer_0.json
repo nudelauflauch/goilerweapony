@@ -1,0 +1,6 @@
+{
+  "parent": "shutter:block/template_shutter_0",
+  "textures": {
+    "texture": "shutter:block/golden_lifter_hammer",
+"particle": "minecraft:block/golden_lifter_hammer_planks"}
+}

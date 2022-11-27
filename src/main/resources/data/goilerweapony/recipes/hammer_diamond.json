@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        " R ",
+        " / "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:diamond"
+        },
+        "R": {
+            "item": "minecraft:rabbit_hide"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "goilerweapony:diamond_hammer",
+        "count": 1
+    }
+}
