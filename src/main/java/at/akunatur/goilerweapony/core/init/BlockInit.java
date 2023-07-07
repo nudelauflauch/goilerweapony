@@ -34,7 +34,7 @@ public class BlockInit {
 	private static <T extends Block> RegistryObject<Item> registerBlockItem(
 			String name, RegistryObject<T> block, CreativeModeTab tab) {
 		return BLOCK_ITEMS.register(name, () -> new BlockItem(block.get(),
-				new Item.Properties().tab(tab)));
+				new Item.Properties()));
 	}
 
 }

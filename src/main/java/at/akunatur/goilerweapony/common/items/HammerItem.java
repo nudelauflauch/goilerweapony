@@ -15,21 +15,21 @@ public class HammerItem extends SwordItem {
     @Override
     public float getDestroySpeed(ItemStack pStack, BlockState pState) {
         Tier tier = this.getTier();
-        float break_gesch;
+        float break_speed;
 
         if (tier == Tiers.NETHERITE) {
-            break_gesch = 3.1F;
+            break_speed = 3.1F;
         } else if (tier == Tiers.DIAMOND) {
-            break_gesch = 3.0F;
+            break_speed = 3.0F;
         } else if (tier == Tiers.GOLD) {
-            break_gesch = 3.7F;
+            break_speed = 3.7F;
         } else if (tier == Tiers.IRON) {
-            break_gesch = 2.4F;
+            break_speed = 2.4F;
         } else {
-            break_gesch = 1.0F;
+            break_speed = 1.0F;
         }
 
-        return pState.getMaterial() == Material.STONE ? break_gesch: 1.0F;
+        return pState.getMaterial() == Material.STONE ? break_speed: 1.0F;
     }
 
     @Override

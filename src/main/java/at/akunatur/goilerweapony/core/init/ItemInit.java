@@ -17,27 +17,27 @@ public class ItemInit {
 
 	public static final RegistryObject<Item> IRON_HAMMER = ITEMS
 			.register("iron_hammer", () -> new HammerItem(Tiers.IRON, 5, -2.4F,
-					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+					new Item.Properties()));
 
 	public static final RegistryObject<Item> GOLD_HAMMER = ITEMS
 			.register("gold_hammer", () -> new HammerItem(Tiers.GOLD, 5, -2.4F,
-					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+					new Item.Properties()));
 
 	public static final RegistryObject<Item> DIAMON_HAMMER = ITEMS.register(
 			"diamond_hammer", () -> new HammerItem(Tiers.DIAMOND, 5, -2.4F,
-					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+					new Item.Properties()));
 
 	public static final RegistryObject<Item> NETHERITE_HAMMER = ITEMS.register(
 			"netherite_hammer", () -> new HammerItem(Tiers.NETHERITE, 5, -2.4F,
-					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+					new Item.Properties()));
 
 	public static final RegistryObject<Item> GOLDEN_LIFTER_HAMMER = ITEMS
 			.register("golden_lifter_hammer", () -> new TeleportHammerItem(
 					Tiers.GOLD, 5, -2.4F,
-					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+					new Item.Properties()));
 
 	public static final RegistryObject<Item> LIFTER = ITEMS.register("lifter",
 			() -> new TeleportItem(
-					new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+					new Item.Properties()));
 
 }

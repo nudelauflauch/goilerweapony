@@ -7,8 +7,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class EntityInit {
 	
-	public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY = DeferredRegister
-			.create(ForgeRegistries.BLOCK_ENTITIES, GoilerWeapony.MODID);
+//	public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY = DeferredRegister
+//			.create(ForgeRegistries.BLOCK_ENTITIES, GoilerWeapony.MODID);
 
 	
 	

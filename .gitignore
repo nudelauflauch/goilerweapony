@@ -1,0 +1,9 @@
+.gradle/*
+.idea/*
+.settings/*
+bin/*
+build/*
+config/*
+defaultconfigs/*
+logs/*
+run/*

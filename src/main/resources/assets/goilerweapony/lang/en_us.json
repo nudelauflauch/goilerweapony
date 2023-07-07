@@ -5,5 +5,9 @@
   "item.goilerweapony.netherite_hammer": "Netherite Hammer",
   
   "item.goilerweapony.golden_lifter_hammer": "Golden Lifter Hammer",
-  "item.goilerweapony.lifter": "Lifter"
+  "item.goilerweapony.lifter": "Lifter",
+
+  "goilerweapony.teleport_item_description": "This item can be used to teleport players to your location\nTeleport radius: 3x3 blocks below",
+  "goilerweapony.teleport_information": "Do not burn, fall or fly",
+  "goilerweapony.teleport_hammer_description": "Damage per teleport: 4"
 }
