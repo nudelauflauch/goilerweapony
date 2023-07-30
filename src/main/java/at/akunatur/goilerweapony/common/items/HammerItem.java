@@ -1,5 +1,6 @@
 package at.akunatur.goilerweapony.common.items;
 
+import at.akunatur.goilerweapony.core.config.GoilerWeaponyConfig;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
@@ -29,12 +30,12 @@ public class HammerItem extends SwordItem {
             break_speed = 1.0F;
         }
 
-        return pState.getMaterial() == Material.STONE ? break_speed: 1.0F;
+        return GoilerWeaponyConfig.HAMMER_CAN_DESTROY_STONE.get() ? pState.getMaterial() == Material.STONE ? break_speed: 1.0F : super.getDestroySpeed(pStack, pState);
     }
 
     @Override
     public boolean isCorrectToolForDrops(BlockState pBlock) {
-        return pBlock.getMaterial() == Material.STONE;
+        return GoilerWeaponyConfig.HAMMER_CAN_DESTROY_STONE.get() ? pBlock.getMaterial() == Material.STONE : false;
     }
 
     @Override
