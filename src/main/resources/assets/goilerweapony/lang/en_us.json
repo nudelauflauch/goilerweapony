@@ -7,6 +7,11 @@
   "item.goilerweapony.golden_lifter_hammer": "Golden Lifter Hammer",
   "item.goilerweapony.lifter": "Lifter",
 
+  "item.goilerweapony.ukulele": "Ukulele",
+  "item.goilerweapony.dagger": "Dagger",
+  "item.goilerweapony.coral_bow": "Coral Bow",
+  "item.goilerweapony.coral_arrow": "Coral Arrow",
+
   "goilerweapony.teleport_item_description": "This item can be used to teleport players to your location\nTeleport radius: 3x3 blocks below",
   "goilerweapony.teleport_information": "Do not burn, fall or fly",
   "goilerweapony.teleport_hammer_description": "Damage per teleport: 4"

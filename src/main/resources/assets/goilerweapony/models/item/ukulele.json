@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "goilerweapony:item/ukulele_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "goilerweapony:item/ukulele_inv"
+    }
+  }
+}
