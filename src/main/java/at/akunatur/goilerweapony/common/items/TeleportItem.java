@@ -20,6 +20,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
+import net.minecraftforge.fml.loading.FMLLoader;
 import org.jetbrains.annotations.Nullable;
 
 public class TeleportItem extends Item {
@@ -72,10 +73,12 @@ public class TeleportItem extends Item {
                 }
 
                 //for testing only
-                entity.teleportTo(playerPos.x(), playerPos.y(), playerPos.z());
-                itemStack.hurtAndBreak(damageAmount, pPlayer, (thing) -> {
-                    thing.broadcastBreakEvent(EquipmentSlot.MAINHAND);
-                });
+                if (!FMLLoader.isProduction()) {
+                    entity.teleportTo(playerPos.x(), playerPos.y(), playerPos.z());
+                    itemStack.hurtAndBreak(damageAmount, pPlayer, (thing) -> {
+                        thing.broadcastBreakEvent(EquipmentSlot.MAINHAND);
+                    });
+                }
 
 
                 if (itemStack.getMaxDamage() - itemStack.getDamageValue() - damageAmount < 0) {

@@ -1,6 +1,12 @@
 {
-  "parent": "goilerweapony:item/hammer",
-  "textures": {
-    "texture": "goilerweapony:item/iron_hammer"
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "goilerweapony:item/iron_hammer_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "goilerweapony:item/iron_hammer_inv"
+    }
   }
 }

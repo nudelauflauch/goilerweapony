@@ -1,0 +1,6 @@
+{
+  "parent": "goilerweapony:item/hammer",
+  "textures": {
+    "texture": "goilerweapony:item/iron_hammer"
+  }
+}

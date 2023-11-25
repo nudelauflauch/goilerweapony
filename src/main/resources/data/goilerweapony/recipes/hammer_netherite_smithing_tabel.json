@@ -1,12 +1,15 @@
 {
-    "type": "minecraft:smithing",
-    "base": {
-        "item": "goilerweapony:diamond_hammer"
-    },
+    "type": "minecraft:smithing_transform",
     "addition": {
         "item": "minecraft:netherite_ingot"
     },
+    "base": {
+        "item": "goilerweapony:diamond_hammer"
+    },
     "result": {
         "item": "goilerweapony:netherite_hammer"
+    },
+    "template": {
+        "item": "minecraft:netherite_upgrade_smithing_template"
     }
 }

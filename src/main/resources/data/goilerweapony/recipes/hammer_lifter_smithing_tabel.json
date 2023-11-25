@@ -1,12 +1,15 @@
 {
-    "type": "minecraft:smithing",
-    "base": {
-        "item": "goilerweapony:gold_hammer"
-    },
+    "type": "minecraft:smithing_transform",
     "addition": {
         "item": "goilerweapony:lifter"
     },
+    "base": {
+        "item": "goilerweapony:gold_hammer"
+    },
     "result": {
         "item": "goilerweapony:golden_lifter_hammer"
+    },
+    "template": {
+        "item": "minecraft:netherite_upgrade_smithing_template"
     }
 }

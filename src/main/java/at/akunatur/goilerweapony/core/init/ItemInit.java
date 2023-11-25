@@ -1,12 +1,8 @@
 package at.akunatur.goilerweapony.core.init;
 
 import at.akunatur.goilerweapony.GoilerWeapony;
-import at.akunatur.goilerweapony.common.items.HammerItem;
-import at.akunatur.goilerweapony.common.items.TeleportHammerItem;
-import at.akunatur.goilerweapony.common.items.TeleportItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import at.akunatur.goilerweapony.common.items.*;
+import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -31,6 +27,9 @@ public class ItemInit {
 			"netherite_hammer", () -> new HammerItem(Tiers.NETHERITE, 5, -2.4F,
 					new Item.Properties()));
 
+	public static final RegistryObject<Item> UKULELE = ITEMS.register(
+			"ukulele", () -> new UkuleleItem(new Item.Properties()));
+
 	public static final RegistryObject<Item> GOLDEN_LIFTER_HAMMER = ITEMS
 			.register("golden_lifter_hammer", () -> new TeleportHammerItem(
 					Tiers.GOLD, 5, -2.4F,
@@ -40,4 +39,16 @@ public class ItemInit {
 			() -> new TeleportItem(
 					new Item.Properties()));
 
+	public static final RegistryObject<Item> DAGGER = ITEMS.register("dagger",
+			() -> new SwordItem(Tiers.IRON, -1, -0.6F,
+					new Item.Properties()));
+
+	public static final RegistryObject<Item> CORAL_BOW = ITEMS.register("coral_bow",
+			() -> new CoralBow(new Item.Properties().durability(128)));
+
+	public static final RegistryObject<Item> CORAL_ARROW = ITEMS.register("coral_arrow",
+			() -> new CoralArrowItem(new Item.Properties()));
+
+	public static final RegistryObject<Item> BLOW_PIPE = ITEMS.register("blow_pipe",
+			() -> new BowItem(new Item.Properties().durability(128)));
 }
