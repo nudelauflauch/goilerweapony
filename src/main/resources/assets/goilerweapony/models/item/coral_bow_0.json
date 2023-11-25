@@ -1,0 +1,6 @@
+{
+  "parent": "goilerweapony:item/coral_bow",
+  "textures": {
+    "layer0": "goilerweapony:item/coral_bow_0"
+  }
+}
