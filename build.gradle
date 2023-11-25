@@ -1,21 +1,11 @@
-buildscript {
-    repositories {
-        maven { url = 'https://maven.minecraftforge.net' }
-        maven { url = 'https://maven.parchmentmc.org' }
-        mavenCentral()
-    }
-    dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-        classpath 'org.parchmentmc:librarian:1.+'
-    }
+plugins {
+    id 'eclipse'
+    id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '5.1.+'
+    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
 }
-apply plugin: 'net.minecraftforge.gradle'
-apply plugin: 'org.parchmentmc.librarian.forgegradle'
-// Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
-apply plugin: 'eclipse'
-apply plugin: 'maven-publish'
 
-version = '1.0.2-1.19.4'
+version = '1.0.6-1.20.1'
 group = 'net.stehschnitzel.goilerweapony' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'goilerweapony'
 
@@ -23,7 +13,8 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17) // Mojang ships Java
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
-    mappings channel: 'parchment', version: '2023.06.25-1.19.3'
+    mappings channel: 'parchment', version: '2023.09.03-1.20.1'
+    //mappings channel: 'parchment', version: '2023.06.25-1.19.3'
     runs {
         client {
             workingDirectory project.file('run')
@@ -88,7 +79,7 @@ repositories {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.19.4-45.1.2'
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.6'
 
 //    compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")
 //    runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
@@ -109,7 +100,7 @@ jar {
     }
 }
 
-jar.finalizedBy('reobfJar') 
+jar.finalizedBy('reobfJar')
 
 publishing {
     publications {
