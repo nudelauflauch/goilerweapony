@@ -1,0 +1,13 @@
+{
+  "item.goilerweapony.iron_hammer": "鐵錘",
+  "item.goilerweapony.gold_hammer": "金錘",
+  "item.goilerweapony.diamond_hammer": "鑽石錘",
+  "item.goilerweapony.netherite_hammer": "獄髓錘",
+  
+  "item.goilerweapony.golden_lifter_hammer": "重力金錘",
+  "item.goilerweapony.lifter": "召喚器",
+
+  "goilerweapony.teleport_item_description": "此物品可將玩家傳送到使用者位置 \n 傳送半徑: 3x3 範圍",
+  "goilerweapony.teleport_information": "避免燃燒，墜落或飛起。",
+  "goilerweapony.teleport_hammer_description": "傳送傷害: 4"
+}
